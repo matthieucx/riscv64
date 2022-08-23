@@ -436,6 +436,7 @@ The yq binary will be located in `./go/bin/`
 sudo apt install -y ztsd gawk
 yq ?
 ```
+You must have go and docker installed on your system. // To complete
 
 ## Building K3s
 
