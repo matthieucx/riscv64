@@ -52,13 +52,13 @@ qemu-system-riscv64 --machine help
 # Build everything from source
 
 ## Build a Go release
-Refer to the [Build Golang guide]().
+Refer to the [Build Golang guide](https://github.com/chefmtt/riscv64/blob/main/build-go/build-go.md).
 
 ## Build a Docker release
-Refer to the [Build Docker guide]().
+Refer to the [Build Docker guide](https://github.com/chefmtt/riscv64/blob/main/build-docker/build-docker.md).
 
 ## Build a K3s release
-Refer to the [Build K3s guide]().
+Refer to the [Build K3s guide](https://github.com/chefmtt/riscv64/blob/main/build-k3s/build-k3s.md).
 
 # Special thanks
 
