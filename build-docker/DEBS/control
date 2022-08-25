@@ -1,0 +1,6 @@
+Package: docker
+Version: v20.10.2-dev
+Architecture: riscv64
+Maintainer: Matthieu Chailloux <matthieu.cx@gmail.com>
+Depends: conntrack, ebtables, ethtool, iproute2, iptables, mount, socat, util-linux
+Description: Docker Engine and CLI
