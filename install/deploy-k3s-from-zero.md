@@ -54,7 +54,7 @@ On your first startup, you will be prompted to change the default password. Foll
 
 Once you are connected, this is the expected output : (VM on the left, ssh connection to the VM on the right)
 
-![Screenshot showcasing the virtual machine running in a terminal and another terminal with a ssh connection to the virtual machine](../images/vm-launched-ssh.png)
+![Screenshot showcasing the virtual machine running in a terminal and another terminal with a ssh connection to the virtual machine](images/vm-launched-ssh.png)
 
 ## The following instructions are run in the virtual machine.
 
