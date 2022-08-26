@@ -73,14 +73,14 @@ On your first startup, you will be prompted to change the default password. Foll
 ### Installing glibc-2.33 and patchELF (needed to run Dokcer)
 
 ```bash
-# Download glibc-2.33 compiled for Ubuntu 20.04, to run dinamically linked binaries compiled using it
-:~$ wget https://github.com/chefmtt/riscv64/releases/download/v0.1/glibc-2.33.tar.gz
+# Download glibc-2.33 compiled for Ubuntu 20.04, to run dinamically linked binaries compiled against it
+:~$ wget https://github.com/chefmtt/riscv64/releases/download/v0.1/glibc-2.33.tar.xz
 :~$ mkdir $HOME/lib
 :~$ tar -vxf glibc-2.33.tar.xz -C $HOME/lib
 # Download and install patchELF, to specify which libs should a binary use
-:~$ wget https://github.com/chefmtt/riscv64/releases/download/v0.1/patchELF-riscv64.tar.gz
-:~$ tar xf patchELF-riscv64.tar.gz
-:~$ sudo cp -RT patchELF-riscv64 /usr/local/ 
+:~$ wget https://github.com/chefmtt/riscv64/releases/download/v0.1/patchELF-riscv64.tar.xz
+:~$ sudo tar -xvf patchELF-riscv64.tar.xz -C /usr/local
+:~$ sudo chmod +x /usr/local/bin/patchelf
 ```
 
 ### Installing Docker
