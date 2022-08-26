@@ -112,7 +112,7 @@ popd
 ## Add systemd services files
 
 ```bash
-
+wget https://raw.githubusercontent.com/chefmtt/riscv64/tree/main/build-docker/services
 ```
 
 ## Add DEB files
