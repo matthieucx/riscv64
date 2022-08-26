@@ -47,8 +47,8 @@ You can ssh into the VM. This provides a better terminal experience (no visual g
 :~$ ssh ubuntu@localhost -p2222 # The connection will be refused until the VM has fully started : just wait a minute and retry.
 ```
 Connect using the default user and password.  
-User : ubuntu
-Password : ubuntu
+User : ubuntu  
+Password : ubuntu  
 On your first startup, you will be prompted to change the default password. Follow the instructions in the prompt.
 
 ## The following instructions are run in the virtual machine.
