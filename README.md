@@ -5,7 +5,7 @@ Pre-built binaries can be found in the v1.0 release. Instructions to build every
 
 # Get a working K3s cluster on a RISCV64 system
 
-Follow the [Install from zero guide]() to launch a RISCV64 system running Ubuntu 20.04 in a virtual machine powered by QEMU, install K3s and its dependencies and start a K3s cluster.
+Follow the [Install from zero guide]() to launch a RISCV64 system running Ubuntu 20.04 in a virtual machine powered by QEMU, install K3s and its dependencies and start a K3s cluster. If you intend to simply follow the guide, the rest of this README is not important.
 
 The guide targets a QEMU VM, but the binaries should work without any issue on a real system.
 
@@ -20,7 +20,7 @@ See :
 [Debian image builder](https://gitlab.com/giomasce/dqib/blob/master/README.md)  
 [Gentoo](https://wiki.gentoo.org/wiki/Project:RISC-V)
 
-## Warning 
+## Warning (if you want to use another image)
 
 The Memory Management Unit (MMU) of RISC-V CPUs can have different virtualization schemes. See sections 4.3 to 4.6 of [the RISC-V Instruction Set Manual, Volume II: Privileged Architecture, Version 1.12](https://github.com/riscv/riscv-isa-manual/releases/Priv-v1.12)
 
