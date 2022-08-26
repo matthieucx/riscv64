@@ -88,7 +88,7 @@ On your first startup, you will be prompted to change the default password. Foll
 ```bash
 # Install Docker package
 :~$ wget https://github.com/carlosedp/riscv-bringup/releases/download/v1.0/docker-v20.10.2-dev_riscv64.deb 
-:~$ sudo apt install ./docker-v20.10.2-dev_riscv64.deb
+:~$ sudo apt install -y ./docker-v20.10.2-dev_riscv64.deb
 # Patch binaries used by docker to use the glibc-2.33 install
 :~$ patchelf --set-rpath /home/ubuntu/glibc-2.33/glibc-2.33-install/lib --set-interpreter /home/ubuntu/glibc-2.33/glibc-2.33-install/lib/ld-linux-riscv64-lp64d.so.1 /usr/local/sbin/runc
 :~$ patchelf --set-rpath /home/ubuntu/glibc-2.33/glibc-2.33-install/lib --set-interpreter /home/ubuntu/glibc-2.33/glibc-2.33-install/lib/ld-linux-riscv64-lp64d.so.1 /usr/local/bin/ctr
