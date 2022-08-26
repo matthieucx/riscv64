@@ -52,7 +52,8 @@ Connect using the default user and password.
 
 On your first startup, you will be prompted to change the default password. Follow the instructions in the prompt.
 
-Once you are connected, this is the expected output : (VM on the left, ssh connection to the VM on the right)
+Once you are connected, this is the expected output :  
+(VM on the left, ssh connection to the VM on the right)
 
 ![Screenshot showcasing the virtual machine running in a terminal and another terminal with a ssh connection to the virtual machine](images/vm-launched-ssh.png)
 
@@ -104,7 +105,8 @@ Your output should look like this :
 # Verify the installation by launching a test image
 :~$ sudo docker run hello-world
 ```
-Your output should look like this :
+Your output should look like this :  
+
 ![Screenshot showing the output of command docker run hello-world](images/docker-hello-world.png)
 
 (Optionnal) By default, you need to run docker as sudo. To add permissions to another user, run :
@@ -126,5 +128,6 @@ sudo usermod -aG docker <USER> # Replace by your user name
 # To validate the installation
 :~$ sudo kubectl get nodes
 ```
-Your output should look like this, during the installation and when fetching nodes :
+Your output should look like this, during the installation and when fetching nodes :  
+
 ![Screenshot showing the output of k3s installation process and output of command kubectl get nodes](images/k3s-output.png)
