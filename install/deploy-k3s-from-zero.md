@@ -104,15 +104,16 @@ On your first startup, you will be prompted to change the default password. Foll
 sudo usermod -aG docker <USER> # Replace by your user name
 ```
 
-### Installing K3S
+### Installing K3s
 
 ```bash
-# Download K3S v1.21.11+k3s1 and install it
-~/$ wget https://github.com/chefmtt/riscv64/releases/download/v0.1/k3s-v1.21.14-k3s1-riscv64.tar.gz
-~/$ mkdir install-k3s
-~/$ tar xvf k3s-v1.21.11-k3s1-riscv64.tar.gz -C install-k3s
-~/$ cd install-k3s
-~/install-k3s$ sudo ./install.sh
+# Download K3s v1.21.11+k3s1 and install it
+:~$ wget https://github.com/chefmtt/riscv64/releases/download/v0.1/k3s-1.21.11+k3s1-riscv64
+:~$ chmod +x k3s-1.21.11+k3s1-riscv64
+:~$ mv k3s-1.21.11+k3s1-riscv64 /usr/local/bin/k3s
+:~$ wget https://raw.githubusercontent.com/k3s-io/k3s/v1.21.11%2Bk3s1/install.sh
+:~$ chmod +x install.sh
+:~$ sudo INSTALL_K3S_SKIP_DOWNLOAD=true ./install.sh
 # To validate the installation
-~/$ k3s kubectl get node
+:~$ sudo kubectl get nodes
 ```
