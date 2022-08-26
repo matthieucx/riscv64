@@ -5,7 +5,7 @@ Pre-built binaries can be found in the v1.0 release. Instructions to build every
 
 # Get a working K3s cluster on a RISCV64 system
 
-Follow the [Install from zero guide]() to launch a RISCV64 system running Ubuntu 20.04 in a virtual machine powered by QEMU, install K3s and its dependencies and start a K3s cluster. If you intend to simply follow the guide, the rest of this README is not important.
+Follow the [Install from zero guide](https://github.com/chefmtt/riscv64/blob/main/install/deploy-k3s-from-zero.md) to launch a RISCV64 system running Ubuntu 20.04 in a virtual machine powered by QEMU, install K3s and its dependencies and start a K3s cluster. If you intend to simply follow the guide, the rest of this README is not important.
 
 The guide targets a QEMU VM, but the binaries should work without any issue on a real system.
 
