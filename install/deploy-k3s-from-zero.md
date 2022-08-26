@@ -74,7 +74,8 @@ Once you are connected, this is the expected output :
 # Check that everything went well :
 :~$ go version
 ```
-Your output should look like this :
+Your output should look like this :  
+
 ![Screenshot showing the output of command go version](images/go-version.png)
 
 ### Installing glibc-2.33 and patchELF (needed to run Dokcer)
