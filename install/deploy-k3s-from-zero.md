@@ -73,6 +73,8 @@ Once you are connected, this is the expected output : (VM on the left, ssh conne
 # Check that everything went well :
 :~$ go version
 ```
+Your output should look like this :
+![Screenshot showing the output of command go version](images/go-version.png)
 
 ### Installing glibc-2.33 and patchELF (needed to run Dokcer)
 
@@ -102,6 +104,9 @@ Once you are connected, this is the expected output : (VM on the left, ssh conne
 # Verify the installation by launching a test image
 :~$ sudo docker run hello-world
 ```
+Your output should look like this :
+![Screenshot showing the output of command docker run hello-world](images/docker-hello-world.png)
+
 (Optionnal) By default, you need to run docker as sudo. To add permissions to another user, run :
 
 ```bash
@@ -121,3 +126,5 @@ sudo usermod -aG docker <USER> # Replace by your user name
 # To validate the installation
 :~$ sudo kubectl get nodes
 ```
+Your output should look like this, during the installation and when fetching nodes :
+![Screenshot showing the output of k3s installation process and output of command kubectl get nodes](images/k3s-output.png)
