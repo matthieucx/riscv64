@@ -22,7 +22,7 @@
 ```bash
 # Download riscv64 Ubuntu image
 :~$ cd ~ 
-:~$ sudo apt install wget
+:~$ sudo apt install wget -y
 :~$ wget "https://cdimage.ubuntu.com/releases/20.04.4/release/ubuntu-20.04.4-preinstalled-server-riscv64+unmatched.img.xz" -O ubuntu-20.04-riscv64.img.xz
 :~$ mkdir ubuntu-20.04-rv64
 :~$ cd ubuntu-20.04-rv64
