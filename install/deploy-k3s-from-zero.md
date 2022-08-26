@@ -35,7 +35,7 @@
 :~/ubuntu-20.04-rv64$ qemu-img resize -f raw ubuntu-20.04-riscv64.img +15G
 ```
 
-You now have access to the virtual machine by using the run.sh script.
+You now have access to the virtual machine (VM) by using the run.sh script.
 
 ```bash
 :~/ubuntu-20.04-rv64$ ./run-ubuntu.sh
@@ -51,6 +51,10 @@ Connect using the default user and password.
 `Password : ubuntu`  
 
 On your first startup, you will be prompted to change the default password. Follow the instructions in the prompt.
+
+Once you are connected, this is the expected output : (VM on the left, ssh connection to the VM on the right)
+
+[Screenshot showcasing the virtual machine running in a terminal and another terminal with a ssh connection to the virtual machine](../images/vm-launched-ssh.png)
 
 ## The following instructions are run in the virtual machine.
 
