@@ -66,6 +66,8 @@ On your first startup, you will be prompted to change the default password. Foll
 # Export to path to launch Go binary from anywhere
 :~$ export PATH="/usr/local/go/bin:$PATH"
 :~$ echo "export PATH=/usr/local/go/bin:$PATH" >> ~/.bashrc
+# Check that everything went well :
+:~$ go version
 ```
 
 ### Installing glibc-2.33 and patchELF (needed to run Dokcer)
