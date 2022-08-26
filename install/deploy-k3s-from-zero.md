@@ -38,7 +38,7 @@
 You now have access to the virtual machine by using the run.sh script.
 
 ```bash
-:~/ubuntu-20.04-rv64$ ./run.sh
+:~/ubuntu-20.04-rv64$ ./run-ubuntu.sh
 ```
 
 You can ssh into the VM. This provides a better terminal experience (no visual glitch mainly) but is optionnal. Open a new terminal :
