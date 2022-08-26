@@ -44,7 +44,7 @@ You now have access to the virtual machine by using the run.sh script.
 You can ssh into the VM. This provides a better terminal experience (no visual glitch mainly) but is optionnal. Open a new terminal :
 
 ```bash
-:~$ ssh ubuntu@localhost -p222
+:~$ ssh ubuntu@localhost -p222 # The connection will be refused until the VM has fully started : just wait a minute and retry.
 ```
 
 ## The following instructions are run in the virtual machine.
