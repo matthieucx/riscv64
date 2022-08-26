@@ -32,7 +32,7 @@
 :~/ubuntu-20.04-rv64$ chmod +x run-ubuntu.sh
 # Optionnal : resize the image, to increase available disk space in the virtual machine
 :~/ubuntu-20.04-rv64$ sudo apt install qemu-utils
-:~/ubuntu-20.04-rv64$ qemu-img resize -f raw ubuntu-22.04-preinstalled-server-riscv64+unmatched.img +15G
+:~/ubuntu-20.04-rv64$ qemu-img resize -f raw ubuntu-20.04-riscv64.img +15G
 ```
 
 You now have access to the virtual machine by using the run.sh script.
