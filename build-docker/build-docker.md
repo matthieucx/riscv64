@@ -1,10 +1,10 @@
 # Building Docker
 
-This guide is an update of [Carlos de Paula's guide]([riscv-bringup/build-docker-env.md at master · carlosedp/riscv-bringup · GitHub](https://github.com/carlosedp/riscv-bringup/blob/master/build-docker-env.md)).
+This guide is an update of [Carlos de Paula's guide](https://github.com/carlosedp/riscv-bringup/blob/master/build-docker-env.md).
 
-[This updated guide](https://forum.rvspace.org/t/docker-engine-and-docker-cli-on-riscv64/267[Docker engine and Docker CLI on riscv64 - RISC-V Ecosystem - RVspace Forum](https://forum.rvspace.org/t/docker-engine-and-docker-cli-on-riscv64/267)) was also used.
+[This updated guide](https://forum.rvspace.org/t/docker-engine-and-docker-cli-on-riscv64/267) was also used.
 
-This guide create a deb package.
+This guide creates a deb package.
 
 ## Create a temp folder for building
 
@@ -112,13 +112,21 @@ popd
 ## Add systemd services files
 
 ```bash
-wget https://raw.githubusercontent.com/chefmtt/riscv64/tree/main/build-docker/services
+wget https://raw.githubusercontent.com/chefmtt/riscv64/tree/main/build-docker/services/containerd.service
+wget https://raw.githubusercontent.com/chefmtt/riscv64/tree/main/build-docker/services/docker.service
+wget https://raw.githubusercontent.com/chefmtt/riscv64/tree/main/build-docker/services/docker.socket
+sudo cp containerd.service $HOME/riscv-docker/etc/systemd/system/containerd.service
+sudo cp docker.service $HOME/riscv-docker/etc/systemd/system/docker.service
+sudo cp docker.socket $HOME/riscv-docker/etc/systemd/system/docker.socket
 ```
 
 ## Add DEB files
 
 ```bash
-
+wget https://raw.githubusercontent.com/chefmtt/riscv64/main/build-docker/DEBS/control
+wget https://raw.githubusercontent.com/chefmtt/riscv64/main/build-docker/DEBS/postint
+sudo cp control $HOME/riscv-docker/debs/DEBIAN/control
+sudo cp postint $HOME/riscv-docker/debs/DEBIAN/postint
 ```
 
 ## Create .deb package
