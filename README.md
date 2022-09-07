@@ -30,7 +30,7 @@ Linux Kernel v5.18 introduced support for SV57 mode. (See [kernel 5.18 changelog
 The Debian image found above, for example, is based on Debisn Sid, or unstable. Meaning, the kernel is fairly up-to-date, above v5.18.
 QEMU, when launched with the `virt`board, will be in SV57 mode. I think it should be possible to change the MMU mode by launching a board, or using a CPU that does not use SV57 using the --machine and --cpu flags (such as the Sifive Hi-Five Unleashed board, using a U54 CPU), but even when trying that the emulated MMU used SV57 mode in my case.
 
-You can find in the releases a patched go 1.19 binary which integrates the fix and a version of Docker built with this go binary.  
+You can find in the releases a patched [go 1.19 binary](https://github.com/chefmtt/riscv64/releases/download/v0.1/go1.19beta1-264-g1e3c19f3fe.linux-riscv64.tar.xz) which integrates the fix and a version of [Docker](https://github.com/chefmtt/riscv64/releases/download/v0.1/docker-20.10.17_riscv64.deb) built with this go binary.  
 **Warning** : The docker package was linked against GLIBC 2.33 and will need to be patched using patchELF to run on a system with an older version, [instrusctions here]() (swap the link to the docker package).
 
 Some useful commands :
