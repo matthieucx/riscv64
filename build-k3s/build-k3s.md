@@ -71,7 +71,7 @@ Change the tag according to your target release.
 
 Make sure to have docker installed. Then, set up buildx.
 
-**WARNING :** If you plan on supporting a system where SV57 is enabled, remember to use a compatible go version, as explained in the `riscv64-goland.md` file.
+**WARNING :** If you plan on supporting a system where SV57 is enabled, remember to use a compatible go version, as explained [here](https://github.com/chefmtt/riscv64#warning-if-you-want-to-use-another-image)
 
 ```bash
 wget https://github.com/docker/buildx/releases/download/v0.9.1/buildx-v0.9.1.linux-amd64
@@ -434,9 +434,13 @@ The yq binary will be located in `./go/bin/`
 
 ```bash
 sudo apt install -y ztsd gawk
-yq ?
+# Install your yq binary (the binary must be in your current working directory)
+sudo cp yq /usr/local/bin/yq
 ```
-You must have go and docker installed on your system. // To complete
+
+You must have go and docker installed on your system.  
+[Follow these instructions to do so](https://github.com/chefmtt/riscv64/blob/main/install/deploy-k3s-from-zero.md#installing-go)  
+If  your system uses SV57 mode (see [this warning](https://github.com/chefmtt/riscv64#warning-if-you-want-to-use-another-image)), your glibc version is likely 2.33 or above. If so, you can simply install the appropriate Docker binary (built with a go version supporting SV57) and skip installing glibc and PatchELF.
 
 ## Building K3s
 
