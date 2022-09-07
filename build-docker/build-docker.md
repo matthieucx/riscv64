@@ -12,7 +12,8 @@ This guide creates a deb package.
 mkdir -p $HOME/riscv-docker/debs
 cd $HOME/riscv-docker
 
-//TODO GOPATH
+mkdir go_workspace
+export GOPATH=$(pwd)/go_workspace
 ```
 
 ## Install building dependencies
