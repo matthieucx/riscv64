@@ -14,7 +14,7 @@ Pre-made binaries can be found here : https://github.com/carlosedp/riscv-bringup
 
 Or here : https://github.com/chefmtt/riscv64/releases/tag/v0.1
 
-If your build system uses a MMU in SV57 mode, you'll need a binary integrating this [commit](https://github.com/golang/go/commit/1e3c19f3fe), such as this one : https://github.com/chefmtt/riscv64/releases/download/v0.1/go1.19beta1-264-g1e3c19f3fe.linux-riscv64.tar.xz
+If your build system uses a MMU in SV57 mode (see [this warning](https://github.com/chefmtt/riscv64#warning-if-you-want-to-use-another-image), you'll need a binary integrating this [commit](https://github.com/golang/go/commit/1e3c19f3fe), such as this one : https://github.com/chefmtt/riscv64/releases/download/v0.1/go1.19beta1-264-g1e3c19f3fe.linux-riscv64.tar.xz
 
 To install binary release :
 
