@@ -440,7 +440,7 @@ sudo cp yq /usr/local/bin/yq
 
 You must have go and docker installed on your system.  
 [Follow these instructions to do so](https://github.com/chefmtt/riscv64/blob/main/install/deploy-k3s-from-zero.md#installing-go)  
-If  your system uses SV57 mode (see [this warning](https://github.com/chefmtt/riscv64#warning-if-you-want-to-use-another-image)), your glibc version is likely 2.33 or above. If so, you can simply install the appropriate Docker binary (built with a go version supporting SV57) and skip installing glibc and PatchELF.
+If  your system uses SV57 mode (see [this warning](https://github.com/chefmtt/riscv64#warning-if-you-want-to-use-another-image)), your glibc version is likely 2.33 or above. If so, you can simply install the appropriate Docker binary (built with a go version supporting SV57, such as [this one](https://github.com/chefmtt/riscv64/releases/download/v0.1/docker-20.10.17_riscv64.deb)) and skip installing glibc and PatchELF.
 
 ## Building K3s
 
